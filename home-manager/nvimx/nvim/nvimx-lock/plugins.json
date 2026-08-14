@@ -1,0 +1,223 @@
+{
+  "lazyNvim": {
+    "inputName": "lazy-nvim",
+    "source": {
+      "owner": "folke",
+      "repo": "lazy.nvim",
+      "type": "github"
+    },
+    "synthetic": true
+  },
+  "localPlugins": {},
+  "plugins": {
+    "blink.cmp": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [
+        "friendly-snippets"
+      ],
+      "inputName": "blink-cmp",
+      "pin": null,
+      "resolvedRef": "refs/tags/v1.10.2",
+      "source": {
+        "owner": "saghen",
+        "repo": "blink.cmp",
+        "type": "github"
+      },
+      "tag": null,
+      "version": "1.*"
+    },
+    "bufferline.nvim": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [
+        "nvim-web-devicons"
+      ],
+      "inputName": "bufferline-nvim",
+      "pin": null,
+      "resolvedRef": "refs/tags/v4.9.1",
+      "source": {
+        "owner": "akinsho",
+        "repo": "bufferline.nvim",
+        "type": "github"
+      },
+      "tag": null,
+      "version": "*"
+    },
+    "catppuccin": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [],
+      "inputName": "catppuccin",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "catppuccin",
+        "repo": "nvim",
+        "type": "github"
+      },
+      "tag": null,
+      "version": null
+    },
+    "friendly-snippets": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [],
+      "inputName": "friendly-snippets",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "rafamadriz",
+        "repo": "friendly-snippets",
+        "type": "github"
+      },
+      "tag": null,
+      "version": null
+    },
+    "go.nvim": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [
+        "guihua.lua",
+        "nvim-lspconfig"
+      ],
+      "inputName": "go-nvim",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "ray-x",
+        "repo": "go.nvim",
+        "type": "github"
+      },
+      "tag": null,
+      "version": null
+    },
+    "guihua.lua": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [],
+      "inputName": "guihua-lua",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "ray-x",
+        "repo": "guihua.lua",
+        "type": "github"
+      },
+      "tag": null,
+      "version": null
+    },
+    "mini.pairs": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [],
+      "inputName": "mini-pairs",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "nvim-mini",
+        "repo": "mini.pairs",
+        "type": "github"
+      },
+      "tag": null,
+      "version": null
+    },
+    "nvim-lspconfig": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [],
+      "inputName": "nvim-lspconfig",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "neovim",
+        "repo": "nvim-lspconfig",
+        "type": "github"
+      },
+      "tag": null,
+      "version": null
+    },
+    "nvim-web-devicons": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [],
+      "inputName": "nvim-web-devicons",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "nvim-tree",
+        "repo": "nvim-web-devicons",
+        "type": "github"
+      },
+      "tag": null,
+      "version": null
+    },
+    "oil.nvim": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [
+        "nvim-web-devicons"
+      ],
+      "inputName": "oil-nvim",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "stevearc",
+        "repo": "oil.nvim",
+        "type": "github"
+      },
+      "tag": null,
+      "version": null
+    },
+    "snacks.nvim": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [],
+      "inputName": "snacks-nvim",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "folke",
+        "repo": "snacks.nvim",
+        "type": "github"
+      },
+      "tag": null,
+      "version": null
+    }
+  },
+  "schemaVersion": 1,
+  "warnings": []
+}

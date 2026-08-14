@@ -1,0 +1,39 @@
+spawn-at-startup "noctalia"
+
+prefer-no-csd
+
+// Discord など X11 API を参照するアプリのために XWayland を提供する
+xwayland-satellite {
+  path "xwayland-satellite"
+}
+
+window-rule {
+  geometry-corner-radius 20
+  clip-to-geometry true
+  focus-ring {
+    active-color  "#cba6f7"
+  }
+}
+
+input {
+  mod-key "Alt"
+}
+
+output "eDP-1" {
+  scale 2
+}
+
+binds {
+  Mod+D { spawn "fuzzel"; }
+
+  Mod+H { focus-column-left; }
+  Mod+L { focus-column-right; }
+
+  Mod+Comma { consume-window-into-column; }
+  Mod+Period { expel-window-from-column; }
+
+  Mod+P { screenshot; }
+  Mod+O { toggle-overview; }
+  Mod+F { maximize-column; }
+  Mod+Q { close-window; }
+}

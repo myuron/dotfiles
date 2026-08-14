@@ -1,0 +1,22 @@
+#+begin_src emacs-lisp :tangle yes
+  (scroll-bar-mode -1)
+#+end_src
+
+#+begin_src emacs-lisp :tangle yes
+  (menu-bar-mode -1)
+#+end_src
+
+#+begin_src emacs-lisp :tangle yes
+  (tool-bar-mode -1)
+#+end_src
+
+#+begin_src emacs-lisp :tangle yes
+  (add-to-list 'default-frame-alist '(internal-border-width . 16))
+  (set-frame-parameter nil 'internal-border-width 16)
+
+  (defun my/sync-internal-border-color (&rest _)
+    (set-face-background 'internal-border (face-attribute 'default :background)))
+
+  (my/sync-internal-border-color)
+  (advice-add 'load-theme :after #'my/sync-internal-border-color)
+#+end_src

@@ -1,0 +1,49 @@
+* Emacs configuration
+
+** UI
+
+*** spacemacs-theme
+
+#+begin_src emacs-lisp :tangle yes
+  (use-package spacemacs-theme
+    :ensure nil
+    :config
+    (load-theme 'spacemacs-dark t))
+#+end_src
+
+*** spaceline
+
+#+begin_src emacs-lisp :tangle yes
+  (use-package spaceline
+    :ensure nil
+    :init
+    (setq powerline-default-separator 'wave)
+    :config
+    (require 'spaceline-config)
+    (spaceline-emacs-theme))
+#+end_src
+
+*** centaur-tabs
+
+#+begin_src emacs-lisp :tangle yes
+  (use-package centaur-tabs
+    :ensure nil
+    :demand
+    :init
+    (setq centaur-tabs-style "wave")
+    (setq centaur-tabs-set-bar 'under)
+    :config
+    (centaur-tabs-mode t)
+    :bind
+    ("C-<prior>" . centaur-tabs-backward)
+    ("C-<next>" . centaur-tabs-forward))
+#+end_src
+
+*** dashboard
+
+#+begin_src emacs-lisp :tangle yes
+  (use-package dashboard
+    :ensure nil
+    :config
+    (dashboard-setup-startup-hook))
+#+end_src
