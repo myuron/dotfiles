@@ -94,6 +94,17 @@
     (completion-category-overrides '((file (styles basic partial-completion)))))
 #+end_src
 
+*** corfu
+
+#+begin_src emacs-lisp :tangle yes
+  (use-package corfu
+    :ensure nil
+    :custom
+    (corfu-auto t)
+    :init
+    (global-corfu-mode))
+#+end_src
+
 ** Git
 
 *** magit

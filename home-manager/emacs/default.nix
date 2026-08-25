@@ -21,6 +21,7 @@ in
       vertico-posframe
       marginalia
       orderless
+      corfu
 
       # Git
       magit
