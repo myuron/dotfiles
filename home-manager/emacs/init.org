@@ -55,6 +55,7 @@
 
 #+begin_src emacs-lisp :tangle yes
   (use-package vertico
+    :ensure nil
     :init
     (vertico-mode))
 #+end_src
@@ -63,6 +64,7 @@
 
 #+begin_src emacs-lisp :tangle yes
   (use-package vertico-posframe
+    :ensure nil
     :init
     (vertico-posframe-mode))
 #+end_src
