@@ -21,6 +21,7 @@ in
       vertico
       vertico-posframe
       marginalia
+      nerd-icons-completion
       orderless
       consult
       corfu
