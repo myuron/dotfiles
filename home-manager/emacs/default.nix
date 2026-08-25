@@ -7,10 +7,14 @@ in
     enable = true;
     package = pkgs.emacs30-pgtk;
     extraPackages = epkgs: with epkgs; [
+      # UI
       spacemacs-theme
       spaceline
       centaur-tabs
       dashboard
+
+      # Git
+      magit
     ];
   };
   home.file.".emacs.d/early-init.el".text = tangle (builtins.readFile ./early-init.org);

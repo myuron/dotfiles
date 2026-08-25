@@ -47,3 +47,12 @@
     :config
     (dashboard-setup-startup-hook))
 #+end_src
+
+** Git
+
+*** magit
+
+#+begin_src emacs-lisp :tangle yes
+  (use-package magit
+    :ensure nil)
+#+end_src
