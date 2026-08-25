@@ -13,6 +13,9 @@ in
       centaur-tabs
       dashboard
 
+      # Completion
+      vertico
+
       # Git
       magit
     ];

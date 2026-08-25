@@ -48,6 +48,17 @@
     (dashboard-setup-startup-hook))
 #+end_src
 
+
+** Completion
+
+*** vertico
+
+#+begin_src emacs-lisp :tangle yes
+  (use-package vertico
+    :init
+    (vertico-mode))
+#+end_src
+
 ** Git
 
 *** magit
