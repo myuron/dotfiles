@@ -48,6 +48,12 @@
     (dashboard-setup-startup-hook))
 #+end_src
 
+** Explorer
+
+#+begin_src emacs-lisp :tangle yes
+  (use-package treemacs
+    :ensure nil)
+#+end_src
 
 ** Completion
 

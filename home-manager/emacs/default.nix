@@ -13,6 +13,9 @@ in
       centaur-tabs
       dashboard
 
+      # Explorer
+      treemacs
+
       # Completion
       vertico
       vertico-posframe
