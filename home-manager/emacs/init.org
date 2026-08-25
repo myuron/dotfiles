@@ -162,7 +162,7 @@
     :hook
     (nix-ts-mode . eglot-ensure)
     (go-mode . eglot-ensure)
-    (rust-mode . eglot-nsure))
+    (rust-mode . eglot-ensure))
 #+end_src
 
 *** nix-ts-mode
