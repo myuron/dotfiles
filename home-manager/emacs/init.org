@@ -78,6 +78,16 @@
     (marginalia-mode))
 #+end_src
 
+*** orderless
+
+#+begin_src emacs-lisp :tangle yes
+  (use-package orderless
+    :ensure nil
+    :custom
+    (completion-styles '(orderless basic))
+    (completion-category-overrides '((file (styles basic partial-completion)))))
+#+end_src
+
 ** Git
 
 *** magit

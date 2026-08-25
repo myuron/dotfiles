@@ -17,6 +17,7 @@ in
       vertico
       vertico-posframe
       marginalia
+      orderless
 
       # Git
       magit
