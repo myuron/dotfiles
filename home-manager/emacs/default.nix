@@ -15,6 +15,7 @@ in
 
       # Completion
       vertico
+      vertico-posframe
 
       # Git
       magit

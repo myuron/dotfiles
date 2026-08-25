@@ -59,6 +59,14 @@
     (vertico-mode))
 #+end_src
 
+*** vertico-posframe
+
+#+begin_src emacs-lisp :tangle yes
+  (use-package vertico-posframe
+    :init
+    (vertico-posframe-mode))
+#+end_src
+
 ** Git
 
 *** magit
