@@ -94,6 +94,13 @@
     (completion-category-overrides '((file (styles basic partial-completion)))))
 #+end_src
 
+*** consult
+
+#+begin_src emacs-lisp :tangle yes
+  (use-package consult
+    :ensure nil)
+#+end_src
+
 *** corfu
 
 #+begin_src emacs-lisp :tangle yes
@@ -103,6 +110,37 @@
     (corfu-auto t)
     :init
     (global-corfu-mode))
+#+end_src
+
+** LSP
+
+*** eglot
+
+#+begin_src emacs-lisp :tangle yes
+  (use-package eglot
+    :ensure nil
+    :config
+    (add-to-list 'eglot-server-programs '(nix-ts-mode . "nixd"))
+    (add-to-list 'eglot-server-programs '(go-mode . "gopls"))
+    (add-to-list 'eglot-server-programs '(rust-mode . "rust-analyzer"))
+    :hook
+    (nix-ts-mode . eglot-ensure)
+    (go-mode . eglot-ensure)
+    (rust-mode . eglot-nsure))
+#+end_src
+
+*** nix-ts-mode
+
+#+begin_src emacs-lisp :tangle yes
+  (use-package nix-ts-mode
+    :mode "\\.nix\\'")
+#+end_src
+
+*** go-mode
+
+#+begin_src emacs-lisp :tangle yes
+  (use-package go-mode
+    :mode "\\.go\\'")
 #+end_src
 
 ** Git

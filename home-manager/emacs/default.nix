@@ -21,7 +21,14 @@ in
       vertico-posframe
       marginalia
       orderless
+      consult
       corfu
+
+      # LSP
+      treesit-grammars.with-all-grammars
+      nix-ts-mode
+      go-mode
+      rust-mode
 
       # Git
       magit
