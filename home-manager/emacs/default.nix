@@ -15,6 +15,7 @@ in
 
       # Explorer
       treemacs
+      treemacs-nerd-icons
 
       # Completion
       vertico

@@ -1,5 +1,13 @@
 * Emacs configuration
 
+** Emacs
+
+*** font
+
+#+begin_src emacs-lisp :tangle yes
+  (set-face-attribute 'default nil :family "HackGen Console NF" :height 120)
+#+end_src
+
 ** UI
 
 *** spacemacs-theme
@@ -55,6 +63,14 @@
 #+begin_src emacs-lisp :tangle yes
   (use-package treemacs
     :ensure nil)
+#+end_src
+
+*** treemacs-nerd-icons
+
+#+begin_src emacs-lisp :tangle yes
+  (use-package treemacs-nerd-icons
+    :ensure nil
+    :config(treemacs-nerd-icons-config))
 #+end_src
 
 ** Completion

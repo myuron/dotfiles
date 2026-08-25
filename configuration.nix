@@ -163,6 +163,7 @@
     packages = with pkgs; [
       nerd-fonts.noto
       nerd-fonts.jetbrains-mono
+      hackgen-nf-font
     ];
   };
 
