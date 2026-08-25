@@ -50,6 +50,8 @@
 
 ** Explorer
 
+*** treemacs
+
 #+begin_src emacs-lisp :tangle yes
   (use-package treemacs
     :ensure nil)
