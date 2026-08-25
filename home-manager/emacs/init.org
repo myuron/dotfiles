@@ -67,6 +67,15 @@
     (vertico-posframe-mode))
 #+end_src
 
+*** marginalia
+
+#+begin_src emacs-lisp :tangle yes
+  (use-package marginalia
+    :ensure nil
+    :init
+    (marginalia-mode))
+#+end_src
+
 ** Git
 
 *** magit
