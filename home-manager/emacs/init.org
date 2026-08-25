@@ -8,6 +8,14 @@
   (set-face-attribute 'default nil :family "HackGen Console NF" :height 120)
 #+end_src
 
+*** don't create backup files and lock files
+
+#+begin_src emacs-lisp :tangle yes
+  (setq make-backup-files nil)
+  (setq backup-inhibited nil)
+  (setq create-lockfiles nil)
+#+end_src
+
 ** UI
 
 *** spacemacs-theme
