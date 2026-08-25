@@ -156,9 +156,9 @@
   (use-package eglot
     :ensure nil
     :config
-    (add-to-list 'eglot-server-programs '(nix-ts-mode . "nixd"))
-    (add-to-list 'eglot-server-programs '(go-mode . "gopls"))
-    (add-to-list 'eglot-server-programs '(rust-mode . "rust-analyzer"))
+    (add-to-list 'eglot-server-programs '(nix-ts-mode . ("nixd")))
+    (add-to-list 'eglot-server-programs '(go-mode . ("gopls")))
+    (add-to-list 'eglot-server-programs '(rust-mode . ("rust-analyzer")))
     :hook
     (nix-ts-mode . eglot-ensure)
     (go-mode . eglot-ensure)
