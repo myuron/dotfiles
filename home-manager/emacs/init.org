@@ -101,6 +101,15 @@
     (vertico-posframe-mode))
 #+end_src
 
+*** savehist
+
+#+begin_src emacs-lisp :tangle yes
+  (use-package savehist
+    :ensure nil
+    :init
+    (savehist-mode))
+#+end_src
+
 *** marginalia
 
 #+begin_src emacs-lisp :tangle yes
@@ -137,6 +146,13 @@
     :ensure nil)
 #+end_src
 
+*** consult-ghq
+
+#+begin_src emacs-lisp :tangle yes
+  (use-package consult-ghq
+    :ensure nil)
+#+end_src
+
 *** corfu
 
 #+begin_src emacs-lisp :tangle yes
@@ -146,6 +162,32 @@
     (corfu-auto t)
     :init
     (global-corfu-mode))
+#+end_src
+
+*** embark
+
+#+begin_src emacs-lisp :tangle yes
+  (use-package embark
+    :ensure nil
+    :bind
+    ("C-." . embark-act)
+    ("C-;" . embark-dwim))
+#+end_src
+
+*** embark-consult
+
+#+begin_src emacs-lisp :tangle yes
+  (use-package embark-consult
+    :ensure nil)
+#+end_src
+
+*** puni
+
+#+begin_src emacs-lisp :tangle yes
+  (use-package puni
+    :ensure nil
+    :init
+    (puni-global-mode))
 #+end_src
 
 ** LSP
@@ -179,6 +221,15 @@
     :mode "\\.go\\'")
 #+end_src
 
+*** flymake
+
+#+begin_src emacs-lisp :tangle yes
+  (use-package flymake
+    :ensure nil
+    :init
+    (flymake-mode))
+#+end_src
+
 ** Git
 
 *** magit
@@ -186,4 +237,42 @@
 #+begin_src emacs-lisp :tangle yes
   (use-package magit
     :ensure nil)
+#+end_src
+
+** Other
+
+*** envrc
+
+#+begin_src emacs-lisp :tangle yes
+  (use-package envrc
+    :ensure nil
+    :hook
+    (after-init . envrc-global-mode))
+#+end_src
+
+*** winum
+
+#+begin_src emacs-lisp :tangle yes
+  (use-package winum
+    :ensure nil
+    :init
+    (winum-mode))
+#+end_src
+
+*** autorevert
+
+#+begin_src emacs-lisp :tangle yes
+  (use-package autorevert
+    :ensure nil
+    :config
+    (global-auto-revert-mode))
+#+end_src
+
+*** which-key
+
+#+begin_src emacs-lisp :tangle yes
+  (use-package which-key
+    :ensure nil
+    :config
+    (which-key-mode))
 #+end_src

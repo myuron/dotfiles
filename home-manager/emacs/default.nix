@@ -24,7 +24,11 @@ in
       nerd-icons-completion
       orderless
       consult
+      consult-ghq
       corfu
+      embark
+      embark-consult
+      puni
 
       # LSP
       treesit-grammars.with-all-grammars
@@ -34,6 +38,10 @@ in
 
       # Git
       magit
+
+      # Other
+      envrc
+      winum
     ];
   };
   home.file.".emacs.d/early-init.el".text = tangle (builtins.readFile ./early-init.org);

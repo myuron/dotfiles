@@ -20,5 +20,9 @@ in
       "cache.soopy.moe-1:0RZVsQeR+GOh0VQI9rvnHz55nVXkFardDqfm4+afjPo="
       "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4="
     ];
+    trusted-users = [
+      "root"
+      "myuron"
+    ];
   };
 }
