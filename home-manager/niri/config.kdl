@@ -7,6 +7,11 @@ xwayland-satellite {
   path "xwayland-satellite"
 }
 
+layer-rule {
+  match namespace="^noctalia-backdrop"
+  place-within-backdrop true
+}
+
 window-rule {
   geometry-corner-radius 20
   clip-to-geometry true
@@ -24,7 +29,8 @@ output "eDP-1" {
 }
 
 binds {
-  Mod+D { spawn "fuzzel"; }
+  // Mod+D { spawn "fuzzel"; }
+  Mod+D { spawn-sh "noctalia msg panel-toggle launcher"; }
 
   Mod+H { focus-column-left; }
   Mod+L { focus-column-right; }

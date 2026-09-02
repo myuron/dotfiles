@@ -36,6 +36,8 @@
 
       # terminal
       foot
+
+      llm-agents.orca
       
       # etc
       ripgrep

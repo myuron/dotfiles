@@ -25,6 +25,12 @@
         radius = 0;
         margin_ends = 0;
       };
+
+      backdrop = {
+        enabled = true;
+        blur_intensity = 0.1;
+        tint_intensity = 0.5;
+      };
     };
   };
 }
