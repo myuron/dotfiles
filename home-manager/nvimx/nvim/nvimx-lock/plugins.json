@@ -86,6 +86,24 @@
       "tag": null,
       "version": null
     },
+    "gitsigns.nvim": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [],
+      "inputName": "gitsigns-nvim",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "lewis6991",
+        "repo": "gitsigns.nvim",
+        "type": "github"
+      },
+      "tag": null,
+      "version": null
+    },
     "go.nvim": {
       "branch": null,
       "build": {
@@ -125,6 +143,24 @@
       "tag": null,
       "version": null
     },
+    "lazygit.nvim": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [],
+      "inputName": "lazygit-nvim",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "kdheepak",
+        "repo": "lazygit.nvim",
+        "type": "github"
+      },
+      "tag": null,
+      "version": null
+    },
     "mini.pairs": {
       "branch": null,
       "build": {
@@ -143,6 +179,63 @@
       "tag": null,
       "version": null
     },
+    "mini.surround": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [],
+      "inputName": "mini-surround",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "nvim-mini",
+        "repo": "mini.surround",
+        "type": "github"
+      },
+      "tag": null,
+      "version": null
+    },
+    "noice.nvim": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [
+        "nui.nvim",
+        "nvim-notify"
+      ],
+      "inputName": "noice-nvim",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "folke",
+        "repo": "noice.nvim",
+        "type": "github"
+      },
+      "tag": null,
+      "version": null
+    },
+    "nui.nvim": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [],
+      "inputName": "nui-nvim",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "muniftanjim",
+        "repo": "nui.nvim",
+        "type": "github"
+      },
+      "tag": null,
+      "version": null
+    },
     "nvim-lspconfig": {
       "branch": null,
       "build": {
@@ -156,6 +249,42 @@
       "source": {
         "owner": "neovim",
         "repo": "nvim-lspconfig",
+        "type": "github"
+      },
+      "tag": null,
+      "version": null
+    },
+    "nvim-notify": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [],
+      "inputName": "nvim-notify",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "rcarriga",
+        "repo": "nvim-notify",
+        "type": "github"
+      },
+      "tag": null,
+      "version": null
+    },
+    "nvim-treesitter": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [],
+      "inputName": "nvim-treesitter",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "nvim-treesitter",
+        "repo": "nvim-treesitter",
         "type": "github"
       },
       "tag": null,

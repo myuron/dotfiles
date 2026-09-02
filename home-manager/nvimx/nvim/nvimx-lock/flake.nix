@@ -21,6 +21,10 @@
       url = "github:rafamadriz/friendly-snippets";
       flake = false;
     };
+    gitsigns-nvim = {
+      url = "github:lewis6991/gitsigns.nvim";
+      flake = false;
+    };
     go-nvim = {
       url = "github:ray-x/go.nvim";
       flake = false;
@@ -29,12 +33,36 @@
       url = "github:ray-x/guihua.lua";
       flake = false;
     };
+    lazygit-nvim = {
+      url = "github:kdheepak/lazygit.nvim";
+      flake = false;
+    };
     mini-pairs = {
       url = "github:nvim-mini/mini.pairs";
       flake = false;
     };
+    mini-surround = {
+      url = "github:nvim-mini/mini.surround";
+      flake = false;
+    };
+    noice-nvim = {
+      url = "github:folke/noice.nvim";
+      flake = false;
+    };
+    nui-nvim = {
+      url = "github:muniftanjim/nui.nvim";
+      flake = false;
+    };
     nvim-lspconfig = {
       url = "github:neovim/nvim-lspconfig";
+      flake = false;
+    };
+    nvim-notify = {
+      url = "github:rcarriga/nvim-notify";
+      flake = false;
+    };
+    nvim-treesitter = {
+      url = "github:nvim-treesitter/nvim-treesitter";
       flake = false;
     };
     nvim-web-devicons = {

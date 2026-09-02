@@ -2,5 +2,10 @@ return {
   "akinsho/bufferline.nvim",
   version = "*",
   dependencies = "nvim-tree/nvim-web-devicons",
-  opts = {},
+  opts = {
+    options = {
+      buffer_close_icon = "",
+      separator_style = "slant"
+    },
+  },
 }

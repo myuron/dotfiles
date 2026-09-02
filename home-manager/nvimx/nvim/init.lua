@@ -2,6 +2,7 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 vim.opt.number = true
+vim.opt.relativenumber = true
 vim.opt.cursorline = true
 
 vim.opt.expandtab = true
@@ -15,4 +16,5 @@ vim.opt.scrolloff = 3
 require("config.lazy")
 require("config.lsp")
 require("config.keymap")
+
 vim.cmd.colorscheme "catppuccin-nvim"
