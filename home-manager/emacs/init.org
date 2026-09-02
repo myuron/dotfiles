@@ -16,6 +16,12 @@
   (setq create-lockfiles nil)
 #+end_src
 
+*** line number
+
+#+begin_src emacs-lisp :tangle yes
+  (global-display-line-numbers-mode 1)
+#+end_src
+
 ** UI
 
 *** spacemacs-theme
