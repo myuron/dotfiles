@@ -63,6 +63,7 @@
     extraGroups = [
       "wheel" # Enable ‘sudo’ for the user.
       "hermes"
+      "docker"
     ];
     packages = with pkgs; [
       tree
@@ -217,4 +218,6 @@
       };
     };
   };
+
+  virtualisation.docker.enable = true;
 }
