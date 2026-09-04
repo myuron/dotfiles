@@ -282,3 +282,15 @@
     :config
     (which-key-mode))
 #+end_src
+
+*** google-translate
+
+#+begin_src emacs-lisp :tangle yes
+  (use-package google-translate
+    :ensure nil
+    :bind
+    ("C-c t" . google-translate-smooth-translate)
+    :custom
+    (setq google-translate-translation-directions-alist . '(("en" . "ja")
+  							  ("ja" . "en"))))
+#+end_src

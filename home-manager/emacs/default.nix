@@ -6,43 +6,45 @@ in
   programs.emacs = {
     enable = true;
     package = pkgs.emacs30-pgtk;
-    extraPackages = epkgs: with epkgs; [
-      # UI
-      spacemacs-theme
-      spaceline
-      centaur-tabs
-      dashboard
+    extraPackages =
+      epkgs: with epkgs; [
+        # UI
+        spacemacs-theme
+        spaceline
+        centaur-tabs
+        dashboard
 
-      # Explorer
-      treemacs
-      treemacs-nerd-icons
+        # Explorer
+        treemacs
+        treemacs-nerd-icons
 
-      # Completion
-      vertico
-      vertico-posframe
-      marginalia
-      nerd-icons-completion
-      orderless
-      consult
-      consult-ghq
-      corfu
-      embark
-      embark-consult
-      puni
+        # Completion
+        vertico
+        vertico-posframe
+        marginalia
+        nerd-icons-completion
+        orderless
+        consult
+        consult-ghq
+        corfu
+        embark
+        embark-consult
+        puni
 
-      # LSP
-      treesit-grammars.with-all-grammars
-      nix-ts-mode
-      go-mode
-      rust-mode
+        # LSP
+        treesit-grammars.with-all-grammars
+        nix-ts-mode
+        go-mode
+        rust-mode
 
-      # Git
-      magit
+        # Git
+        magit
 
-      # Other
-      envrc
-      winum
-    ];
+        # Other
+        envrc
+        winum
+        google-translate
+      ];
   };
   home.file.".emacs.d/early-init.el".text = tangle (builtins.readFile ./early-init.org);
   home.file.".emacs.d/init.el".text = tangle (builtins.readFile ./init.org);

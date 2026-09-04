@@ -4,7 +4,7 @@
       "https://cache.soopy.moe"
       "https://noctalia.cachix.org"
     ];
-    extra-trusted-public-keys = [ 
+    extra-trusted-public-keys = [
       "cache.soopy.moe-1:0RZVsQeR+GOh0VQI9rvnHz55nVXkFardDqfm4+afjPo="
       "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4="
     ];

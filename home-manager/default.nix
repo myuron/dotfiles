@@ -38,7 +38,7 @@
       foot
 
       llm-agents.orca
-      
+
       # etc
       ripgrep
       fd
