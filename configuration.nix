@@ -89,9 +89,15 @@
     neovim
   ];
 
-  services.greetd = {
+  programs.regreet = {
     enable = true;
-    settings.default_session.command = "${pkgs.tuigreet}/bin/tuigreet --cmd niri-session";
+    settings = {
+      background = {
+        path = "./wallpapers/wallpaper-000.jpg";
+        fit = "Cover";
+      };
+      GTK.application_prefer_dark_theme = true;
+    };
   };
 
   services.hermes-agent = {
