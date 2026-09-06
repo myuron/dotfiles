@@ -16,6 +16,7 @@
       ghq
       lazygit
       discord
+      just
 
       # LSP
       lua-language-server
@@ -24,6 +25,7 @@
       bash-language-server
       gopls
       rust-analyzer
+      cliamp
 
       # AI
       hunk
