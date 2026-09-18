@@ -77,6 +77,10 @@
       url = "github:folke/snacks.nvim";
       flake = false;
     };
+    trouble-nvim = {
+      url = "github:folke/trouble.nvim";
+      flake = false;
+    };
   };
   outputs = _: { };
 }

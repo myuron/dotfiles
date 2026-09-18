@@ -345,6 +345,24 @@
       },
       "tag": null,
       "version": null
+    },
+    "trouble.nvim": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [],
+      "inputName": "trouble-nvim",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "folke",
+        "repo": "trouble.nvim",
+        "type": "github"
+      },
+      "tag": null,
+      "version": null
     }
   },
   "schemaVersion": 1,

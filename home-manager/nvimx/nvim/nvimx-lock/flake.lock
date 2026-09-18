@@ -310,7 +310,8 @@
         "nvim-treesitter": "nvim-treesitter",
         "nvim-web-devicons": "nvim-web-devicons",
         "oil-nvim": "oil-nvim",
-        "snacks-nvim": "snacks-nvim"
+        "snacks-nvim": "snacks-nvim",
+        "trouble-nvim": "trouble-nvim"
       }
     },
     "snacks-nvim": {
@@ -326,6 +327,22 @@
       "original": {
         "owner": "folke",
         "repo": "snacks.nvim",
+        "type": "github"
+      }
+    },
+    "trouble-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1761919011,
+        "narHash": "sha256-6U/KWjvRMxWIxcsI2xNU/ltfgkaFG4E3BdzC7brK/DI=",
+        "owner": "folke",
+        "repo": "trouble.nvim",
+        "rev": "bd67efe408d4816e25e8491cc5ad4088e708a69a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "folke",
+        "repo": "trouble.nvim",
         "type": "github"
       }
     }
