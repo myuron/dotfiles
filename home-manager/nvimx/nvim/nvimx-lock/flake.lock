@@ -50,6 +50,55 @@
         "type": "github"
       }
     },
+    "cmigemo-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1784983749,
+        "narHash": "sha256-hgdcaj254s+l8B3D5SU+4KzX86zYIWLEUhCRtg9+Sz8=",
+        "owner": "levnas",
+        "repo": "cmigemo.nvim",
+        "rev": "a58cc2b70d4c3392ec7cc8392b48e1c122326ce5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "levnas",
+        "repo": "cmigemo.nvim",
+        "type": "github"
+      }
+    },
+    "crates-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1748464078,
+        "narHash": "sha256-9BE6Co+519h5RswwmEnW6Od5hPcet47BwoXNMZaYAx8=",
+        "owner": "saecki",
+        "repo": "crates.nvim",
+        "rev": "afcd1cc3eeceb5783676fc8464389b9216a29d05",
+        "type": "github"
+      },
+      "original": {
+        "owner": "saecki",
+        "ref": "refs/tags/stable",
+        "repo": "crates.nvim",
+        "type": "github"
+      }
+    },
+    "flash-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1787427371,
+        "narHash": "sha256-88DoXkz8M6ehkzS9VNu2/T0FENpduTbgiUZd+GeVVX4=",
+        "owner": "folke",
+        "repo": "flash.nvim",
+        "rev": "5f0f270fdc7c5b0c21d903ee85b9cb06f2ac636a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "folke",
+        "repo": "flash.nvim",
+        "type": "github"
+      }
+    },
     "friendly-snippets": {
       "flake": false,
       "locked": {
@@ -143,6 +192,22 @@
       "original": {
         "owner": "kdheepak",
         "repo": "lazygit.nvim",
+        "type": "github"
+      }
+    },
+    "lualine-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1780194559,
+        "narHash": "sha256-6PjGu30Ed4/e/HQ3mIFQuUOxcCiti/71jjlMsjN7EoA=",
+        "owner": "nvim-lualine",
+        "repo": "lualine.nvim",
+        "rev": "221ce6b2d999187044529f49da6554a92f740a96",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nvim-lualine",
+        "repo": "lualine.nvim",
         "type": "github"
       }
     },
@@ -295,12 +360,16 @@
         "blink-cmp": "blink-cmp",
         "bufferline-nvim": "bufferline-nvim",
         "catppuccin": "catppuccin",
+        "cmigemo-nvim": "cmigemo-nvim",
+        "crates-nvim": "crates-nvim",
+        "flash-nvim": "flash-nvim",
         "friendly-snippets": "friendly-snippets",
         "gitsigns-nvim": "gitsigns-nvim",
         "go-nvim": "go-nvim",
         "guihua-lua": "guihua-lua",
         "lazy-nvim": "lazy-nvim",
         "lazygit-nvim": "lazygit-nvim",
+        "lualine-nvim": "lualine-nvim",
         "mini-pairs": "mini-pairs",
         "mini-surround": "mini-surround",
         "noice-nvim": "noice-nvim",

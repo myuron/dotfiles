@@ -15,6 +15,9 @@
 
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
+  # enp230s0f1u1 は Apple T2 Controller の内部 USB イーサネットで外部には繋がらない。
+  # NetworkManager が DHCP を永久に再試行し NetworkManager-wait-online が毎回タイムアウトするため管理対象から外す。
+  networking.networkmanager.unmanaged = [ "interface-name:enp230s0f1u1" ];
 
   hardware.bluetooth = {
     enable = true;
@@ -73,9 +76,11 @@
 
   programs = {
     fish.enable = true;
+    nix-ld.enable = true;
   };
 
   programs.niri.enable = true;
+  programs.nano.enable = false;
   environment.systemPackages = with pkgs; [
     waybar
     fuzzel
@@ -89,7 +94,7 @@
     neovim
   ];
 
-  programs.regreet = {
+  services.displayManager.regreet = {
     enable = true;
     settings = {
       background = {
@@ -99,6 +104,8 @@
       GTK.application_prefer_dark_theme = true;
     };
   };
+
+  services.udisks2.enable = true;
 
   services.hermes-agent = {
     enable = true;

@@ -68,6 +68,62 @@
       "tag": null,
       "version": null
     },
+    "cmigemo.nvim": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [],
+      "inputName": "cmigemo-nvim",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "levnas",
+        "repo": "cmigemo.nvim",
+        "type": "github"
+      },
+      "tag": null,
+      "version": null
+    },
+    "crates.nvim": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [],
+      "inputName": "crates-nvim",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "saecki",
+        "repo": "crates.nvim",
+        "type": "github"
+      },
+      "tag": "stable",
+      "version": null
+    },
+    "flash.nvim": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [
+        "cmigemo.nvim"
+      ],
+      "inputName": "flash-nvim",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "folke",
+        "repo": "flash.nvim",
+        "type": "github"
+      },
+      "tag": null,
+      "version": null
+    },
     "friendly-snippets": {
       "branch": null,
       "build": {
@@ -156,6 +212,26 @@
       "source": {
         "owner": "kdheepak",
         "repo": "lazygit.nvim",
+        "type": "github"
+      },
+      "tag": null,
+      "version": null
+    },
+    "lualine.nvim": {
+      "branch": null,
+      "build": {
+        "kind": "none"
+      },
+      "commit": null,
+      "dependencies": [
+        "nvim-web-devicons"
+      ],
+      "inputName": "lualine-nvim",
+      "pin": null,
+      "resolvedRef": null,
+      "source": {
+        "owner": "nvim-lualine",
+        "repo": "lualine.nvim",
         "type": "github"
       },
       "tag": null,

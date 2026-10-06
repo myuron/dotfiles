@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, fish-kubectl-completions, ... }:
 {
   programs.fish = {
     enable = true;
@@ -10,6 +10,10 @@
       {
         name = "autopair";
         src = pkgs.fishPlugins.autopair.src;
+      }
+      {
+        name = "kubectl-completions";
+        src = fish-kubectl-completions;
       }
     ];
   };

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+export EDITOR="nvim"
+
+export NB_DIR="${NB_DIR:-/home/myuron/ghq/github.com/myuron/nb}"

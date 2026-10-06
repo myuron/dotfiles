@@ -2,6 +2,7 @@
   programs.nvimx = {
     enable = true;
     vimAlias = true;
+    defaultEditor = true;
     configDir = ./nvim;
     lockDir = ./nvim/nvimx-lock;
     lock = {

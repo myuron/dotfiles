@@ -17,6 +17,18 @@
       url = "github:catppuccin/nvim";
       flake = false;
     };
+    cmigemo-nvim = {
+      url = "github:levnas/cmigemo.nvim";
+      flake = false;
+    };
+    crates-nvim = {
+      url = "github:saecki/crates.nvim/refs/tags/stable";
+      flake = false;
+    };
+    flash-nvim = {
+      url = "github:folke/flash.nvim";
+      flake = false;
+    };
     friendly-snippets = {
       url = "github:rafamadriz/friendly-snippets";
       flake = false;
@@ -35,6 +47,10 @@
     };
     lazygit-nvim = {
       url = "github:kdheepak/lazygit.nvim";
+      flake = false;
+    };
+    lualine-nvim = {
+      url = "github:nvim-lualine/lualine.nvim";
       flake = false;
     };
     mini-pairs = {

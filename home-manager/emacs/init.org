@@ -20,17 +20,18 @@
 
 #+begin_src emacs-lisp :tangle yes
   (global-display-line-numbers-mode 1)
+  (setq display-line-numbers-type 'relative)
 #+end_src
 
 ** UI
 
-*** spacemacs-theme
+*** batppuccin
 
 #+begin_src emacs-lisp :tangle yes
-  (use-package spacemacs-theme
+  (use-package batppuccin
     :ensure nil
     :config
-    (load-theme 'spacemacs-dark t))
+    (load-theme 'batppuccin-mocha t))
 #+end_src
 
 *** spaceline
@@ -207,10 +208,12 @@
     (add-to-list 'eglot-server-programs '(nix-ts-mode . ("nixd")))
     (add-to-list 'eglot-server-programs '(go-mode . ("gopls")))
     (add-to-list 'eglot-server-programs '(rust-mode . ("rust-analyzer")))
+    (add-to-list 'eglot-server-programs '(typescript-mode . ("typescript-language-server")))
     :hook
     (nix-ts-mode . eglot-ensure)
     (go-mode . eglot-ensure)
-    (rust-mode . eglot-ensure))
+    (rust-mode . eglot-ensure)
+    (typescript-mode . eglot-ensure))
 #+end_src
 
 *** nix-ts-mode
@@ -243,6 +246,16 @@
 #+begin_src emacs-lisp :tangle yes
   (use-package magit
     :ensure nil)
+#+end_src
+
+** Org
+
+#+begin_src emacs-lisp :tangle yes
+  (use-package org-roam
+    :ensure nil
+    :config
+    (setq org-roam-directory "~/org/org-roam")
+    (org-roam-db-autosync-mode))
 #+end_src
 
 ** Other
@@ -293,4 +306,22 @@
     :custom
     (setq google-translate-translation-directions-alist . '(("en" . "ja")
   							  ("ja" . "en"))))
+#+end_src
+
+*** evil
+
+#+begin_src emacs-lisp :tangle yes
+  (use-package evil
+    :ensure nil
+    :custom
+    (evil-want-C-u-scroll t)
+    :config
+    (evil-mode t))
+#+end_src
+
+*** imenu-list
+
+#+begin_src emacs-lisp :tangle yes
+  (use-package imenu-list
+    :ensure nil)
 #+end_src

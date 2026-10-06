@@ -5,11 +5,11 @@ in
 {
   programs.emacs = {
     enable = true;
-    package = pkgs.emacs30-pgtk;
+    package = pkgs.emacs-pgtk;
     extraPackages =
       epkgs: with epkgs; [
         # UI
-        spacemacs-theme
+        batppuccin
         spaceline
         centaur-tabs
         dashboard
@@ -36,14 +36,20 @@ in
         nix-ts-mode
         go-mode
         rust-mode
+	typescript-mode
 
         # Git
         magit
 
+	# Org
+	org-roam
+	
         # Other
         envrc
         winum
         google-translate
+	evil
+	imenu-list
       ];
   };
   home.file.".emacs.d/early-init.el".text = tangle (builtins.readFile ./early-init.org);

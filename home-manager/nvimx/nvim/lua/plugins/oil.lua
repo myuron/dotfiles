@@ -8,6 +8,6 @@ return {
   },
   lazy = false,
   keys = {
-    { "<leader>e", function() vim.cmd.Oil() end, desc = "explorer" },
+    { "<leader>E", function() vim.cmd.Oil() end, desc = "File Explorer (oil)" },
   },
 }

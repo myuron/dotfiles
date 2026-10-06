@@ -18,6 +18,9 @@
       discord
       just
 
+      # runtime
+      bun
+
       # LSP
       lua-language-server
       nixd
@@ -26,6 +29,8 @@
       gopls
       rust-analyzer
       cliamp
+      vue-language-server
+      typescript-language-server
 
       # AI
       hunk
@@ -47,6 +52,14 @@
       jq
       yazi
       nix-search-tv
+      digikam
+      vlc
+      libdvdcss
+      nb
+      drawio
+      cmigemo
+      viddy
+      bluetui
 
       whitesur-gtk-theme
       pkgs.quickshell
@@ -68,6 +81,7 @@
     ./television.nix
     ./zoxide.nix
     ./firefox.nix
+    ./nb
   ];
   programs.home-manager.enable = true;
   catppuccin = {
